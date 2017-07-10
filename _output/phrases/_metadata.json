@@ -1,0 +1,8 @@
+{
+    "permission.forum_deleteOwnPostTimeLimit.txt": {
+        "global_cache": false,
+        "version_id": 2000070,
+        "version_string": "2.0.0",
+        "hash": "7f418855263f69ead86dd64d2b0860e6"
+    }
+}
