@@ -1,6 +1,6 @@
 # PostDeleteTimeLimit
 
-Permission to limit what posts can be deleted. XenForo doesn't handle deleting posts from super-long threads well
+Permission to limit how old a post/thread can be and still be deleted. XenForo doesn't handle deleting posts from super-long threads well
 
 Introduces 1 new permissions:
 
