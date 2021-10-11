@@ -3,7 +3,7 @@
     "title": "Post Delete Time Limit",
     "description": "Prevent old posts from being deleted",
     "version_id": 2001000,
-    "version_string": "2.1.0",
+    "version_string": "2.2.0",
     "dev" : "Xon",
     "dev_url": "https://atelieraphelion.com/",
     "faq_url": "",
