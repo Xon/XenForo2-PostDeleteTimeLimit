@@ -5,4 +5,4 @@ Permission to limit how old a post/thread can be and still be deleted. XenForo d
 Introduces 2 new permissions:
 
 - Time limit on deleting own messages (minutes)
-- Limit deleting own messages to last post in tread
+- Limit deleting own messages to last post in thread
