@@ -34,7 +34,7 @@ class Post extends XFCP_Post
         if (  $ownLastOnly && !$this->isLastPost() )
         {
 			
-            $error = \XF::phraseDeferred('permission.message_delete_another_post', ['minutes' => $deleteLimit]);
+            $error = \XF::phraseDeferred('permission.message_delete_another_post');
 
             return false;
         }
