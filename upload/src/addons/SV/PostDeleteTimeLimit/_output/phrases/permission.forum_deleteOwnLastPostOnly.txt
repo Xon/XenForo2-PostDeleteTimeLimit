@@ -1,0 +1,1 @@
+Limit deleting own posts to last post

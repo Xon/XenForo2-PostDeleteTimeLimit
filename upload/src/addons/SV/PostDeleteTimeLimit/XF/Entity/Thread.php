@@ -31,6 +31,15 @@ class Thread extends XFCP_Thread
 
             return false;
         }
+		
+		$ownLastOnly = $visitor->hasNodePermission($nodeId, 'deleteOwnLastPostOnly');
+		
+        if ( $ownLastOnly && $this->reply_count > 0 )
+        {
+            $error = \XF::phraseDeferred('permission.message_delete_another_post');
+
+            return false;
+        }
 
         return true;
     }
