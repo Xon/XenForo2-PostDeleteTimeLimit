@@ -29,6 +29,16 @@ class Post extends XFCP_Post
             return false;
         }
 
+		$ownLastOnly = $visitor->hasNodePermission($nodeId, 'deleteOwnLastPostOnly');
+		
+        if (  $ownLastOnly && !$this->isLastPost() )
+        {
+			
+            $error = \XF::phraseDeferred('permission.message_delete_another_post', ['minutes' => $deleteLimit]);
+
+            return false;
+        }
+        
         return true;
     }
 }
