@@ -2,16 +2,18 @@
     "legacy_addon_id": "SV_PostDeleteTimeLimit",
     "title": "Post Delete Time Limit",
     "description": "Prevent old posts from being deleted",
-    "version_id": 2001000,
-    "version_string": "2.1.0",
+    "version_id": 2002000,
+    "version_string": "2.2.0",
     "dev" : "Xon",
     "dev_url": "https://atelieraphelion.com/",
     "faq_url": "",
     "support_url": "https://xenforo.com/community/resources/post-delete-time-limit.6628/",
-    "extra_urls": [],
+    "extra_urls": {
+        "Add-on site": "https://atelieraphelion.com/products/"
+    },
     "require" : {
-        "XF": [2010070, "XenForo 2.1.0+"],
-        "php": ["5.6.0", "PHP 5.6.0+"]
+        "XF": [2010070, "XenForo 2.2.0+"],
+        "php": ["7.2.0", "PHP 7.2.0+"]
     },
     "icon": ""
 }
