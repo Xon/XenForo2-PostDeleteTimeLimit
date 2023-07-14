@@ -4,6 +4,12 @@ namespace SV\PostDeleteTimeLimit\XF\Entity;
 
 class Post extends XFCP_Post
 {
+    /**
+     * @param string $type
+     * @param \XF\Phrase|string|null $error
+     * @return bool
+     * @noinspection PhpMissingReturnTypeInspection
+     */
     public function canDelete($type = 'soft', &$error = null)
     {
         $canDelete = parent::canDelete($type, $error);
@@ -20,9 +26,9 @@ class Post extends XFCP_Post
             return true;
         }
 
-        $deleteLimit = $visitor->hasNodePermission($nodeId, 'deleteOwnPostTimeLimit');
+        $deleteLimit = (int)$visitor->hasNodePermission($nodeId, 'deleteOwnPostTimeLimit');
 
-        if ($deleteLimit != -1 && (!$deleteLimit || $this->post_date < \XF::$time - 60 * $deleteLimit))
+        if ($deleteLimit !== -1 && ($deleteLimit === 0 || $this->post_date < \XF::$time - 60 * $deleteLimit))
         {
             $error = \XF::phraseDeferred('message_edit_time_limit_expired', ['minutes' => $deleteLimit]);
 
