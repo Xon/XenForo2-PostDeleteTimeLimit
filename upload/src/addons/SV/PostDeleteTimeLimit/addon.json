@@ -9,7 +9,7 @@
     "faq_url": "",
     "support_url": "https://xenforo.com/community/resources/post-delete-time-limit.6628/",
     "extra_urls": {
-        "Add-on site": "https://atelieraphelion.com/products/"
+        "Add-on site": "https://atelieraphelion.com/products/post-delete-time-limit.154/"
     },
     "require" : {
         "XF": [2010070, "XenForo 2.2.0+"],
